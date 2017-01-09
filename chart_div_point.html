@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+  <script>
+   google.charts.load('current', {packages: ['corechart', 'bar']});
+google.charts.setOnLoadCallback(drawMultSeries);
+
+google.charts.load('current', {packages: ['corechart', 'bar']});
+google.charts.setOnLoadCallback(drawMultSeries);
+
+function drawMultSeries() {
+      var data = google.visualization.arrayToDataTable([
+        ['player', 'our chosen players', 'nba chosen players'],
+        ['2015~2016', 20.96,21.40],
+        ['2010~2011', 13.76,22.13],
+        ['2005~2006', 16.20, 27.73]
+      ]);
+
+      var options = {
+        title: 'PG points per game',
+        chartArea: {width: '50%'},
+        hAxis: {
+          title: 'points per game',
+          minValue: 0
+        },
+        vAxis: {
+          title: ''
+        }
+      };
+
+      var chart = new google.visualization.BarChart(document.getElementById('chart_div_point'));
+      chart.draw(data, options);
+    }
+  </script>
+  <meta charset="UTF-8" />
+  <title>Document</title>
+</head>
+<body>
+    <div id="chart_div_point"></div>
+</body>
+</html>   

@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+  <script>
+   google.charts.load('current', {packages: ['corechart', 'bar']});
+google.charts.setOnLoadCallback(drawMultSeries);
+
+function drawMultSeries() {
+      var data = google.visualization.arrayToDataTable([
+        ['player', 'our chosen players', 'nba chosen players'],
+        ['2015~2016',10.2,8.9],
+        ['2010~2011',4.2,7.4],
+        ['2005~2006',8.5,6.4]
+      ]);
+
+      var options = {
+        title: 'PG AST per game',
+        chartArea: {width: '50%'},
+        hAxis: {
+          title: 'AST per game',
+          minValue:0
+        },
+        vAxis: {
+          title: ''
+        }
+      };
+
+      var chart = new google.visualization.BarChart(document.getElementById('chart_div_ast'));
+      chart.draw(data, options);
+    } 
+  </script>
+  <meta charset="UTF-8" />
+  <title>Document</title>
+</head>
+<body>
+    <div id="chart_div_ast"></div>
+</body>
+</html>   

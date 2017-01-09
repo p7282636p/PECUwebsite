@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+  <script>
+  google.charts.load('current', {packages: ['corechart', 'bar']});
+google.charts.setOnLoadCallback(drawMultSeries);
+
+function drawMultSeries() {
+      var data = google.visualization.arrayToDataTable([
+        ['player', 'our chosen players', 'nba chosen players'],
+        ['2015~2016',99.86,98.13],
+        ['2010~2011',98.40,92.91],
+        ['2005~2006',96.52,92.87]
+      ]);
+
+      var options = {
+        title: 'PG PACE',
+        chartArea: {width: '50%'},
+        hAxis: {
+          title: 'PACE',
+          minValue:90
+        },
+        vAxis: {
+          title: ''
+        }
+      };
+
+      var chart = new google.visualization.BarChart(document.getElementById('chart_div_pace'));
+      chart.draw(data, options);
+    }
+  </script>
+  <meta charset="UTF-8" />
+  <title>Document</title>
+</head>
+<body>
+    <div id="chart_div_pace"></div>
+</body>
+</html>   
