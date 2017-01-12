@@ -6,7 +6,8 @@
   <script type="text/javascript" async="" src="http://urlvalidation.com/whoami?jsonp=func48079"></script>
 
   <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script src="jquery-3.1.1.min.js"></script>
   <meta charset="utf-8">
   <title>Home | Analysis of PGs in NBA</title>
@@ -377,14 +378,29 @@ function myFunction() {
 
 </head>
 
-<body class="">
+<body class="" data-spy="scroll" data-target=".navbar" data-offset="50">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script type="text/javascript">
+$('a[href^="#"]').on('click', function(event) {
+
+    var target = $(this.getAttribute('href'));
+
+    if( target.length ) {
+        event.preventDefault();
+        $('html, body').stop().animate({
+            scrollTop: target.offset().top
+        }, 2000);
+    }
+
+});
+</script>
 <script src="http://d3js.org/d3.v3.min.js"></script>
 <style>
     .showme{ display: none;}
     .showhim:hover .showme{display : block;}
     .showhim:hover .ok{display : none;}
     </style>
-    <embed name="NBAmusic" src="NBA_mix.mp3" loop="true" hidden="true" autostart="true">
+    <embed name="NBAmusic" src="NBA_mix.mp3" loop=3 hidden="true" autostart="true">
   <div id="SITE_CONTAINER">
     <div class="noop" data-reactid=".0">
       <div data-reactid=".0.0">
@@ -1795,6 +1811,7 @@ function myFunction() {
               </div>
             </div>
           </div>
+          
           <div style="width: 980px; position: absolute; top: 0px; height: 140px; left: 0px;" class="s5" data-state=" " id="SITE_HEADER" data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$SITE_HEADER">
             <div id="SITE_HEADERscreenWidthBackground" class="s5screenWidthBackground" data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$SITE_HEADER.0" style="width: 182px; left: 0px;">
               <div class="s5_bg" data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$SITE_HEADER.0.0"></div>
@@ -1895,6 +1912,7 @@ function myFunction() {
               </div>
             </div>
           </div>
+        
           <div style="width: 980px; position: absolute; top: 140px; height: 6700px; left: 0px;" class="s8" data-state="" id="PAGES_CONTAINER" data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER">
             <div id="PAGES_CONTAINERscreenWidthBackground" class="s8screenWidthBackground" data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.0" style="width: 182px; left: 0px;"></div>
             <div id="PAGES_CONTAINERcenteredContent" class="s8centeredContent" data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.1">
@@ -2625,60 +2643,13 @@ function drawMultSeries() {
                                             <div style="position: absolute; width: 300px; height: 235px;" id="comp-ixfkgts15img" class="s26img" data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.1.1.$SITE_PAGES.$pjt3c.1.$comp-ixfkgts0.1.$mediaixfklhs445/=1$mediaixfklhs445.1.$comp-ixfkgts11.1.$mediaixfklhs51/=1$mediaixfklhs51.1.$comp-ixfkgts12.1.$comp-ixfkgts15.0.0">
                                              
                                               <div class="s26imgpreloader" id="comp-ixfkgts15imgpreloader" data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.1.1.$SITE_PAGES.$pjt3c.1.$comp-ixfkgts0.1.$mediaixfklhs445/=1$mediaixfklhs445.1.$comp-ixfkgts11.1.$mediaixfklhs51/=1$mediaixfklhs51.1.$comp-ixfkgts12.1.$comp-ixfkgts15.0.0.0"></div>
-                                              <img onmouseover="this.src='https://scontent-sjc2-1.xx.fbcdn.net/v/t1.0-9/15873136_10212075282025620_8428532739024453657_n.jpg?oh=a74ec81886d8112b109c9867b7ba4881&oe=58DD232B';"   onmouseout="this.src='https://scontent-sjc2-1.xx.fbcdn.net/v/l/t1.0-9/15977230_10212075282065621_6842012716764421439_n.jpg?oh=64cf173cab80c13aab26501de3ac5bdb&oe=5912BBC9'" alt="" width="100%" height="100%" ;/>
+                                              <img src="https://scontent-sjc2-1.xx.fbcdn.net/v/l/t1.0-9/15977230_10212075282065621_6842012716764421439_n.jpg?oh=64cf173cab80c13aab26501de3ac5bdb&oe=5912BBC9" onmouseover="this.src='https://scontent-sjc2-1.xx.fbcdn.net/v/t1.0-9/15873136_10212075282025620_8428532739024453657_n.jpg?oh=a74ec81886d8112b109c9867b7ba4881&oe=58DD232B';"   onmouseout="this.src='https://scontent-sjc2-1.xx.fbcdn.net/v/l/t1.0-9/15977230_10212075282065621_6842012716764421439_n.jpg?oh=64cf173cab80c13aab26501de3ac5bdb&oe=5912BBC9'" alt="" width="100%" height="100%" ;/>
 
                                                 </div>
                                           </div>
                                         </div>
-                                        <div style="left: 0px; width: 300px; position: absolute; top: 235px; height: 235px;" class="s27" id="comp-ixfkgts21" data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.1.1.$SITE_PAGES.$pjt3c.1.$comp-ixfkgts0.1.$mediaixfklhs445/=1$mediaixfklhs445.1.$comp-ixfkgts11.1.$mediaixfklhs51/=1$mediaixfklhs51.1.$comp-ixfkgts12.1.$comp-ixfkgts21">
-
-                                          <div id="comp-ixfkgts21bg" class="s27bg" data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.1.1.$SITE_PAGES.$pjt3c.1.$comp-ixfkgts0.1.$mediaixfklhs445/=1$mediaixfklhs445.1.$comp-ixfkgts11.1.$mediaixfklhs51/=1$mediaixfklhs51.1.$comp-ixfkgts12.1.$comp-ixfkgts21.0">
-                                          <div id="ast:to" style="width: 300px height:300px">
-                                           <a href="https://scontent-sjc2-1.xx.fbcdn.net/v/t1.0-9/15965771_10212075282105622_4659427236032140279_n.jpg?oh=f71021c1fb1d75e1df411d83cb86756d&oe=5911A339">
-                                          <img onmouseover="this.src='https://scontent-sjc2-1.xx.fbcdn.net/v/t1.0-9/15965771_10212075282105622_4659427236032140279_n.jpg?oh=f71021c1fb1d75e1df411d83cb86756d&oe=5911A339';" onmouseout="this.src='https://scontent-sjc2-1.xx.fbcdn.net/v/t1.0-9/15873134_10212075282425630_5515445145391117745_n.jpg?oh=0366ba59d12ba63a93962350a7958bfc&oe=58DFE386'" alt="" width="100%" height="100%" ;
-                                          onclick="setBanner(); showFlag();"
-
-                                          />
-                                          </a>
-                                          </div>
-                                          <div class="containerAsaiahT" style="position : absolute ; left: 20px; height:250px ; width: 260px" >
-                                          <svg width="100%" height="100%">
-                                          <g class="main" transform="translate(125,110)">
-                                          <g class="webs">
-                                            <polygon points="0,100 95.10565162951535,30.901699437494745 58.77852522924732,-80.90169943749473 -58.7785252292473,-80.90169943749474 -95.10565162951536,30.901699437494724 "></polygon>
-                                            <polygon points="0,75 71.32923872213651,23.17627457812106 44.08389392193549,-60.67627457812105 -44.08389392193548,-60.67627457812106 -71.32923872213652,23.176274578121042 "></polygon>
-                                            <polygon points="0,50 47.552825814757675,15.450849718747373 29.38926261462366,-40.450849718747364 -29.38926261462365,-40.45084971874737 -47.55282581475768,15.450849718747362 "></polygon>
-                                            <polygon points="0,25 23.776412907378838,7.725424859373686 14.69463130731183,-20.225424859373682 -14.694631307311825,-20.225424859373685 -23.77641290737884,7.725424859373681 "></polygon>
-                                          </g>
-                                          <g class="lines">
-                                            <line x1="0" y1="0" x2="0" y2="100"></line>
-                                            <line x1="0" y1="0" x2="95.10565162951535" y2="30.901699437494745"></line>
-                                            <line x1="0" y1="0" x2="58.77852522924732" y2="-80.90169943749473"></line>
-                                            <line x1="0" y1="0" x2="-58.7785252292473" y2="-80.90169943749474"></line>
-                                            <line x1="0" y1="0" x2="-95.10565162951536" y2="30.901699437494724"></line>
-                                          </g>
-                                            <g class="areas">
-                                            <g class="area1">
-                                              <polygon points="0,79.4 65.90821657925413,21.41487771018386 37.3831420458013,-51.453480842246655 -54.781585513658484,-75.4003838757451 -64.86205441132948,21.074959016371402 " stroke="#2ec7c9" fill="#2ec7c9"></polygon>
-                                              <g class="circles"><circle cx="0" cy="79.4" r="3" stroke="#2ec7c9"></circle>
-                                              <circle cx="65.90821657925413" cy="21.41487771018386" r="3" stroke="#2ec7c9"></circle>
-                                              <circle cx="37.3831420458013" cy="-51.453480842246655" r="3" stroke="#2ec7c9"></circle>
-                                              <circle cx="-54.781585513658484" cy="-75.4003838757451" r="3" stroke="#2ec7c9"></circle>
-                                              <circle cx="-64.86205441132948" cy="21.074959016371402" r="3" stroke="#2ec7c9"></circle>
-                                            </g>
-                                            </g>
-                                          </g>
-                                          <g class="texts" >
-                                            <text x="0" y="120" >GP</text>
-                                            <text x="114.12678195541842" y="37.082039324993694">MIN</text>
-                                            <text x="70.53423027509679" y="-97.08203932499369">AST/TO</text>
-                                            <text x="-70.53423027509676" y="-97.0820393249937">PACE</text>
-                                            <text x="-114.12678195541844" y="37.082039324993666">PIE</text>
-                                          </g>
-                                        </g>
-                                        </svg>
-                                        </div>
-                                          </div>
+                                        <div style="left: 0px; width: 300px; position: absolute; top: 235px; height: 235px;"  id="comp-ixfkgts21" data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.1.1.$SITE_PAGES.$pjt3c.1.$comp-ixfkgts0.1.$mediaixfklhs445/=1$mediaixfklhs445.1.$comp-ixfkgts11.1.$mediaixfklhs51/=1$mediaixfklhs51.1.$comp-ixfkgts12.1.$comp-ixfkgts21">
+                                          <img src="https://scontent-sjc2-1.xx.fbcdn.net/v/t1.0-9/15873134_10212075282425630_5515445145391117745_n.jpg?oh=0366ba59d12ba63a93962350a7958bfc&oe=58DFE386" onmouseover="this.src='https://scontent-sjc2-1.xx.fbcdn.net/v/t1.0-9/15965383_10212075585153198_4506274092826578140_n.jpg?oh=c946a40afe4832007e9ca86e3c31f023&oe=58D6CC30';" onmouseout="this.src='https://scontent-sjc2-1.xx.fbcdn.net/v/t1.0-9/15873134_10212075282425630_5515445145391117745_n.jpg?oh=0366ba59d12ba63a93962350a7958bfc&oe=58DFE386'" alt="" width="100%" height="100%" > 
                                         </div>
                                       </div>
                                     </div>
@@ -2697,13 +2668,12 @@ function drawMultSeries() {
                                           </div>
                                         </div>
                                         <div style="left: 0px; width: 300px; position: absolute; top: 0px; height: 235px;" class="s29" id="comp-ixfkgts43" data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.1.1.$SITE_PAGES.$pjt3c.1.$comp-ixfkgts0.1.$mediaixfklhs445/=1$mediaixfklhs445.1.$comp-ixfkgts11.1.$mediaixfklhs51/=1$mediaixfklhs51.1.$comp-ixfkgts13.1.$comp-ixfkgts43">
-                                          <div id="comp-ixfkgts43bg" class="s29bg" data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.1.1.$SITE_PAGES.$pjt3c.1.$comp-ixfkgts0.1.$mediaixfklhs445/=1$mediaixfklhs445.1.$comp-ixfkgts11.1.$mediaixfklhs51/=1$mediaixfklhs51.1.$comp-ixfkgts13.1.$comp-ixfkgts43.0">
-                                          <img onmouseover="this.src='https://scontent-sjc2-1.xx.fbcdn.net/v/t1.0-9/15966056_10212075282465631_5284251900148026982_n.jpg?oh=dd9ffcf9e57c818d6fe632f1216ee622&oe=591E5389';"   onmouseout="this.src='https://scontent-sjc2-1.xx.fbcdn.net/v/t1.0-9/15966278_10212075616633985_8161608783250955620_n.jpg?oh=1b6b169283f911393bb88f6a9e2b7635&oe=58DF3D4D'" alt="" width="100%" height="100%" ;/>
-                                          </div>
+                                          
+                                          <img src="https://scontent-sjc2-1.xx.fbcdn.net/v/t1.0-9/15966278_10212075616633985_8161608783250955620_n.jpg?oh=1b6b169283f911393bb88f6a9e2b7635&oe=58DF3D4D" onmouseover="this.src='https://scontent-sjc2-1.xx.fbcdn.net/v/t1.0-9/15966056_10212075282465631_5284251900148026982_n.jpg?oh=dd9ffcf9e57c818d6fe632f1216ee622&oe=591E5389';"   onmouseout="this.src='https://scontent-sjc2-1.xx.fbcdn.net/v/t1.0-9/15966278_10212075616633985_8161608783250955620_n.jpg?oh=1b6b169283f911393bb88f6a9e2b7635&oe=58DF3D4D'" alt="" width="100%" height="100%" ;/>
+                                        
                                           
                                         </div>
                                       </div>
-                                    </div>
                                     <div style="left: 660px; width: 300px; position: absolute; top: 0px; height: 480px;" class="s2" id="comp-ixfkgts14" data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.1.1.$SITE_PAGES.$pjt3c.1.$comp-ixfkgts0.1.$mediaixfklhs445/=1$mediaixfklhs445.1.$comp-ixfkgts11.1.$mediaixfklhs51/=1$mediaixfklhs51.1.$comp-ixfkgts14">
                                       <div id="comp-ixfkgts14bg" class="s2bg" data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.1.1.$SITE_PAGES.$pjt3c.1.$comp-ixfkgts0.1.$mediaixfklhs445/=1$mediaixfklhs445.1.$comp-ixfkgts11.1.$mediaixfklhs51/=1$mediaixfklhs51.1.$comp-ixfkgts14.0"></div>
                                       <div id="comp-ixfkgts14inlineContent" class="s2inlineContent" data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.1.1.$SITE_PAGES.$pjt3c.1.$comp-ixfkgts0.1.$mediaixfklhs445/=1$mediaixfklhs445.1.$comp-ixfkgts11.1.$mediaixfklhs51/=1$mediaixfklhs51.1.$comp-ixfkgts14.1">
@@ -2712,14 +2682,14 @@ function drawMultSeries() {
                                           <div style="width: 301px; height: 235px;" id="comp-ixfkgts6link" class="s26link" data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.1.1.$SITE_PAGES.$pjt3c.1.$comp-ixfkgts0.1.$mediaixfklhs445/=1$mediaixfklhs445.1.$comp-ixfkgts11.1.$mediaixfklhs51/=1$mediaixfklhs51.1.$comp-ixfkgts14.1.$comp-ixfkgts6.0">
                                             <div style="position: relative; width: 301px; height: 235px;" id="comp-ixfkgts6img" class="s26img" data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.1.1.$SITE_PAGES.$pjt3c.1.$comp-ixfkgts0.1.$mediaixfklhs445/=1$mediaixfklhs445.1.$comp-ixfkgts11.1.$mediaixfklhs51/=1$mediaixfklhs51.1.$comp-ixfkgts14.1.$comp-ixfkgts6.0.0">
                                               <div class="s26imgpreloader" id="comp-ixfkgts6imgpreloader" data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.1.1.$SITE_PAGES.$pjt3c.1.$comp-ixfkgts0.1.$mediaixfklhs445/=1$mediaixfklhs445.1.$comp-ixfkgts11.1.$mediaixfklhs51/=1$mediaixfklhs51.1.$comp-ixfkgts14.1.$comp-ixfkgts6.0.0.0"></div>
-                                             <img onmouseover="this.src='https://scontent-sjc2-1.xx.fbcdn.net/v/t1.0-9/15965442_10212075282785639_8279729284932047813_n.jpg?oh=e1a0cd9982ed529b150f8abaf75ab85a&oe=5915148D';"   onmouseout="this.src='https://scontent-sjc2-1.xx.fbcdn.net/v/t1.0-9/15871951_10212075282905642_5088959478669972993_n.jpg?oh=685fef7a1b254e7e5bd59442f15b32a7&oe=591CE635'" alt="" width="100%" height="100%" ;/>
+                                             <img src="https://scontent-sjc2-1.xx.fbcdn.net/v/t1.0-9/15871951_10212075282905642_5088959478669972993_n.jpg?oh=685fef7a1b254e7e5bd59442f15b32a7&oe=591CE635" onmouseover="this.src='https://scontent-sjc2-1.xx.fbcdn.net/v/t1.0-9/15965442_10212075282785639_8279729284932047813_n.jpg?oh=e1a0cd9982ed529b150f8abaf75ab85a&oe=5915148D';"   onmouseout="this.src='https://scontent-sjc2-1.xx.fbcdn.net/v/t1.0-9/15871951_10212075282905642_5088959478669972993_n.jpg?oh=685fef7a1b254e7e5bd59442f15b32a7&oe=591CE635'" alt="" width="100%" height="100%" ;/>
 
 
                                             </div>
                                           </div>
                                         </div>
                                         <div style="left: 0px; width: 300px; position: absolute; top: 235px; height: 235px;" class="s31" id="comp-ixfkgts62" data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.1.1.$SITE_PAGES.$pjt3c.1.$comp-ixfkgts0.1.$mediaixfklhs445/=1$mediaixfklhs445.1.$comp-ixfkgts11.1.$mediaixfklhs51/=1$mediaixfklhs51.1.$comp-ixfkgts14.1.$comp-ixfkgts62">
-                                       <img onmouseover="this.src='https://scontent-sjc2-1.xx.fbcdn.net/v/t1.0-9/15965280_10212075282945643_7507652845980358333_n.jpg?oh=02d6d770ea74c8749c2f9310aae21943&oe=58DB9633';"   onmouseout="this.src='https://scontent-sjc2-1.xx.fbcdn.net/v/t1.0-9/15941112_10212075283305652_5567740169654448809_n.jpg?oh=6cbcd37ed141a5bacd429927b3bc3f26&oe=58E3D1F2'" alt="" width="100%" height="100%" ;/>
+                                       <img src="https://scontent-sjc2-1.xx.fbcdn.net/v/t1.0-9/15941112_10212075283305652_5567740169654448809_n.jpg?oh=6cbcd37ed141a5bacd429927b3bc3f26&oe=58E3D1F2" onmouseover="this.src='https://scontent-sjc2-1.xx.fbcdn.net/v/t1.0-9/15965280_10212075282945643_7507652845980358333_n.jpg?oh=02d6d770ea74c8749c2f9310aae21943&oe=58DB9633';"   onmouseout="this.src='https://scontent-sjc2-1.xx.fbcdn.net/v/t1.0-9/15941112_10212075283305652_5567740169654448809_n.jpg?oh=6cbcd37ed141a5bacd429927b3bc3f26&oe=58E3D1F2'" alt="" width="100%" height="100%" ;/>
                                           
                                         </div>
                                       </div>
@@ -2728,7 +2698,8 @@ function drawMultSeries() {
                                 </div>
                               </div>
                             </div>
-                            <div style="width: 980px; position: absolute; top: 80px; height: 180px; left: 0px;" class="s1" id="comp-ixfkgts01" data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.1.1.$SITE_PAGES.$pjt3c.1.$comp-ixfkgts0.1.$mediaixfklhs445/=1$mediaixfklhs445.1.$comp-ixfkgts01">
+                          </div>
+                          <div style="width: 980px; position: absolute; top: 80px; height: 180px; left: 0px;" class="s1" id="comp-ixfkgts01" data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.1.1.$SITE_PAGES.$pjt3c.1.$comp-ixfkgts0.1.$mediaixfklhs445/=1$mediaixfklhs445.1.$comp-ixfkgts01">
                               <div style="position: absolute; top: 0px; width: calc(980px); height: 100%; pointer-events: none; bottom: 0px; left: calc(0px); right: calc(980px); overflow: hidden; clip: rect(0px 980px 180px 0px);" class="s1balata" id="comp-ixfkgts01balata"
                                 data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.1.1.$SITE_PAGES.$pjt3c.1.$comp-ixfkgts0.1.$mediaixfklhs445/=1$mediaixfklhs445.1.$comp-ixfkgts01.0">
                                 <div style="position:absolute;width:100%;height:100%;" class="bgColor" id="comp-ixfkgts01balatabgcolor" data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.1.1.$SITE_PAGES.$pjt3c.1.$comp-ixfkgts0.1.$mediaixfklhs445/=1$mediaixfklhs445.1.$comp-ixfkgts01.0.0">
@@ -2758,7 +2729,7 @@ function drawMultSeries() {
                                 </div>
                               </div>
                             </div>
-                          </div>
+
                         </div>
                       </div>
                     </div>
@@ -2919,21 +2890,23 @@ function drawMultSeries() {
                                     <div style="left: 20px; width: 940px; position: absolute; top: 0px; height: 780px;" class="s2" id="comp-ixfkgtrn" data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.1.1.$SITE_PAGES.$pjt3c.1.$comp-ixfkgtrm.1.$mediaixfklhs531/=1$mediaixfklhs531.1.$comp-ixfkgtrm1.1.$mediaixfklhs537/=1$mediaixfklhs537.1.$comp-ixfkgtrn">
                                       <div id="comp-ixfkgtrnbg" class="s2bg" data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.1.1.$SITE_PAGES.$pjt3c.1.$comp-ixfkgtrm.1.$mediaixfklhs531/=1$mediaixfklhs531.1.$comp-ixfkgtrm1.1.$mediaixfklhs537/=1$mediaixfklhs537.1.$comp-ixfkgtrn.0"></div>
                                       <div id="comp-ixfkgtrninlineContent" class="s2inlineContent" data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.1.1.$SITE_PAGES.$pjt3c.1.$comp-ixfkgtrm.1.$mediaixfklhs531/=1$mediaixfklhs531.1.$comp-ixfkgtrm1.1.$mediaixfklhs537/=1$mediaixfklhs537.1.$comp-ixfkgtrn.1">
-                                        <div style="left: 0px; position: absolute; top: 0px; width: 940px; height: 520px;" data-exact-height="520" data-content-padding-horizontal="0" data-content-padding-vertical="0" title="CURRY-PROF.jpg" class="s36" id="comp-ixfkgtro"
+                                        <div style="left: 90px; position: absolute; top: 0px; width: 800px; height: 442.5px;" data-exact-height="520" data-content-padding-horizontal="0" data-content-padding-vertical="0" title="CURRY-PROF.jpg" class="s36" id="comp-ixfkgtro"
                                           data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.1.1.$SITE_PAGES.$pjt3c.1.$comp-ixfkgtrm.1.$mediaixfklhs531/=1$mediaixfklhs531.1.$comp-ixfkgtrm1.1.$mediaixfklhs537/=1$mediaixfklhs537.1.$comp-ixfkgtrn.1.$comp-ixfkgtro">
-                                          <div style="width: 940px; height: 520px;" id="comp-ixfkgtrolink" class="s36link" data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.1.1.$SITE_PAGES.$pjt3c.1.$comp-ixfkgtrm.1.$mediaixfklhs531/=1$mediaixfklhs531.1.$comp-ixfkgtrm1.1.$mediaixfklhs537/=1$mediaixfklhs537.1.$comp-ixfkgtrn.1.$comp-ixfkgtro.0">
-                                            <div style="position: relative; width: 940px; height: 520px;" id="comp-ixfkgtroimg" class="s36img" data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.1.1.$SITE_PAGES.$pjt3c.1.$comp-ixfkgtrm.1.$mediaixfklhs531/=1$mediaixfklhs531.1.$comp-ixfkgtrm1.1.$mediaixfklhs537/=1$mediaixfklhs537.1.$comp-ixfkgtrn.1.$comp-ixfkgtro.0.0">
-                                              <div class="s36imgpreloader" id="comp-ixfkgtroimgpreloader" data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.1.1.$SITE_PAGES.$pjt3c.1.$comp-ixfkgtrm.1.$mediaixfklhs531/=1$mediaixfklhs531.1.$comp-ixfkgtrm1.1.$mediaixfklhs537/=1$mediaixfklhs537.1.$comp-ixfkgtrn.1.$comp-ixfkgtro.0.0.0"></div><img id="comp-ixfkgtroimgimage" alt="" src="https://static.wixstatic.com/media/063d4d_1831f24b179844239e3d6a48548ffa33~mv2_d_4371_2400_s_4_2.jpg/v1/crop/x_32,y_0,w_4338,h_2400/fill/w_940,h_520,al_c,q_85,usm_0.66_1.00_0.01/063d4d_1831f24b179844239e3d6a48548ffa33~mv2_d_4371_2400_s_4_2.webp"
-                                                style="width: 940px; height: 520px; object-fit: cover;" data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.1.1.$SITE_PAGES.$pjt3c.1.$comp-ixfkgtrm.1.$mediaixfklhs531/=1$mediaixfklhs531.1.$comp-ixfkgtrm1.1.$mediaixfklhs537/=1$mediaixfklhs537.1.$comp-ixfkgtrn.1.$comp-ixfkgtro.0.0.$image"></div>
+                                          <div style="width: 800px; height: 442.5px;" id="comp-ixfkgtrolink" class="s36link" data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.1.1.$SITE_PAGES.$pjt3c.1.$comp-ixfkgtrm.1.$mediaixfklhs531/=1$mediaixfklhs531.1.$comp-ixfkgtrm1.1.$mediaixfklhs537/=1$mediaixfklhs537.1.$comp-ixfkgtrn.1.$comp-ixfkgtro.0">
+                                            <div style="position: relative; width: 800px; height: 442.5px;" id="comp-ixfkgtroimg" class="s36img" data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.1.1.$SITE_PAGES.$pjt3c.1.$comp-ixfkgtrm.1.$mediaixfklhs531/=1$mediaixfklhs531.1.$comp-ixfkgtrm1.1.$mediaixfklhs537/=1$mediaixfklhs537.1.$comp-ixfkgtrn.1.$comp-ixfkgtro.0.0">
+                                              <div class="s36imgpreloader" id="comp-ixfkgtroimgpreloader" data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.1.1.$SITE_PAGES.$pjt3c.1.$comp-ixfkgtrm.1.$mediaixfklhs531/=1$mediaixfklhs531.1.$comp-ixfkgtrm1.1.$mediaixfklhs537/=1$mediaixfklhs537.1.$comp-ixfkgtrn.1.$comp-ixfkgtro.0.0.0"></div>
+                                              <img id="comp-ixfkgtroimgimage" alt="" src="https://static.wixstatic.com/media/063d4d_1831f24b179844239e3d6a48548ffa33~mv2_d_4371_2400_s_4_2.jpg/v1/crop/x_32,y_0,w_4338,h_2400/fill/w_940,h_520,al_c,q_85,usm_0.66_1.00_0.01/063d4d_1831f24b179844239e3d6a48548ffa33~mv2_d_4371_2400_s_4_2.webp"
+                                              style="width: 100%" data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.1.1.$SITE_PAGES.$pjt3c.1.$comp-ixfkgtrm.1.$mediaixfklhs531/=1$mediaixfklhs531.1.$comp-ixfkgtrm1.1.$mediaixfklhs537/=1$mediaixfklhs537.1.$comp-ixfkgtrn.1.$comp-ixfkgtro.0.0.$image">
+                                            </div>
                                           </div>
                                         </div>
-                                        <div style="left: 30px; width: 780px; position: absolute; top: 533px;" class="s3" id="comp-ixfkgtro1" data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.1.1.$SITE_PAGES.$pjt3c.1.$comp-ixfkgtrm.1.$mediaixfklhs531/=1$mediaixfklhs531.1.$comp-ixfkgtrm1.1.$mediaixfklhs537/=1$mediaixfklhs537.1.$comp-ixfkgtrn.1.$comp-ixfkgtro1">
+                                        <div style="left: 30px; width: 780px; position: absolute; top: 470px;" class="s3" id="comp-ixfkgtro1" data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.1.1.$SITE_PAGES.$pjt3c.1.$comp-ixfkgtrm.1.$mediaixfklhs531/=1$mediaixfklhs531.1.$comp-ixfkgtrm1.1.$mediaixfklhs537/=1$mediaixfklhs537.1.$comp-ixfkgtrn.1.$comp-ixfkgtro1">
                                             <p class="font_8" style="text-align:left; line-height:1.5em;"><span class="color_11">寫在開頭</span></p>
                                           </div>
 
-                                        <div style="left: 30px; width: 920px; position: absolute; top: 561px;" class="s3" id="comp-ixfkgtro2" data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.1.1.$SITE_PAGES.$pjt3c.1.$comp-ixfkgtrm.1.$mediaixfklhs531/=1$mediaixfklhs531.1.$comp-ixfkgtrm1.1.$mediaixfklhs537/=1$mediaixfklhs537.1.$comp-ixfkgtrn.1.$comp-ixfkgtro2">
+                                        <div style="left: 30px; width: 920px; position: absolute; top: 510px;" class="s3" id="comp-ixfkgtro2" data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.1.1.$SITE_PAGES.$pjt3c.1.$comp-ixfkgtrm.1.$mediaixfklhs531/=1$mediaixfklhs531.1.$comp-ixfkgtrm1.1.$mediaixfklhs537/=1$mediaixfklhs537.1.$comp-ixfkgtrn.1.$comp-ixfkgtro2">
                                             <h5 class="font_5" style="text-align:left; line-height:1.25em;"><span class="color_11">記得每一個絢麗助攻帶來的感動嗎？</span></h5></div>
-                                        <div style="left: 30px; width: 880px; position: absolute; top: 633px;" class="s3" id="comp-ixfkgtro3" data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.1.1.$SITE_PAGES.$pjt3c.1.$comp-ixfkgtrm.1.$mediaixfklhs531/=1$mediaixfklhs531.1.$comp-ixfkgtrm1.1.$mediaixfklhs537/=1$mediaixfklhs537.1.$comp-ixfkgtrn.1.$comp-ixfkgtro3">
+                                        <div style="left: 30px; width: 880px; position: absolute; top: 600px;" class="s3" id="comp-ixfkgtro3" data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.1.1.$SITE_PAGES.$pjt3c.1.$comp-ixfkgtrm.1.$mediaixfklhs531/=1$mediaixfklhs531.1.$comp-ixfkgtrm1.1.$mediaixfklhs537/=1$mediaixfklhs537.1.$comp-ixfkgtrn.1.$comp-ixfkgtro3">
                                             <p class="font_9" style="text-align:left; line-height:1.55em;"><span class="color_11">單季402顆三分球、不可思議的Logoshot、史上第一位全票MVP，以及帶隊打出73勝的歷史最佳戰績，2015-16球季的NBA被Stephen Curry搞的天翻地覆，球迷們引頸期盼Curry的每一次3分線接球、出手、然後命中，享受視覺衝擊的同時，我們似乎也忘了Stephen Curry是個控球後衛啊！<br><br>說到控球後衛，一路從John Stockton、Jason Williams、Steve Nash一直到近代的Chris Paul，他們每次在場上的精心組織、精彩的傳球助攻，總是牽繫著每一代球迷看球的樂趣，也許你我都曾看著精彩的重播嘴角不禁發出一聲：哇…。<br><br>近兩年Curry的竄出扭轉聯盟控衛生態，然而在這樣的衝擊下，有多少控衛仍保存了最初的本質-組織與助攻呢？又或者是NBA的控衛們正走向另一個紀元呢？</span></p>
                                         </div>
                                       </div>
@@ -3011,7 +2984,7 @@ function drawMultSeries() {
                                         <div id="comp-ixfkgtrl" data-align="center" data-disabled="false" data-margin="20" data-should-use-flex="true" style="left: 423px; position: absolute; top: 810px; height: 45px; min-height: 24px; width: 94px;"
                                           class="s37" data-state="desktop shouldUseFlex center" data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.1.1.$SITE_PAGES.$pjt3c.1.$comp-ixfkgtr2.1.$mediaixfklhs64/=1$mediaixfklhs64.1.$comp-ixfkgtr5.1.$mediaixfklhs610/=1$mediaixfklhs610.1.$comp-ixfkgtr7.1.$comp-ixfkgtrl"
                                           data-prev-text="Explore" data-prev-min-width="54" data-prev-width="94">
-                                          <a id="comp-ixfkgtrllink" class="g-transparent-a s37link" data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.1.1.$SITE_PAGES.$pjt3c.1.$comp-ixfkgtr2.1.$mediaixfklhs64/=1$mediaixfklhs64.1.$comp-ixfkgtr5.1.$mediaixfklhs610/=1$mediaixfklhs610.1.$comp-ixfkgtr7.1.$comp-ixfkgtrl.0"><span id="comp-ixfkgtrllabel" class="s37label" data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.1.1.$SITE_PAGES.$pjt3c.1.$comp-ixfkgtr2.1.$mediaixfklhs64/=1$mediaixfklhs64.1.$comp-ixfkgtr5.1.$mediaixfklhs610/=1$mediaixfklhs610.1.$comp-ixfkgtr7.1.$comp-ixfkgtrl.0.0">Explore</span></a>
+                                          <a href="#comp-ixfkgtrm" id="comp-ixfkgtrllink" class="g-transparent-a s37link" data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.1.1.$SITE_PAGES.$pjt3c.1.$comp-ixfkgtr2.1.$mediaixfklhs64/=1$mediaixfklhs64.1.$comp-ixfkgtr5.1.$mediaixfklhs610/=1$mediaixfklhs610.1.$comp-ixfkgtr7.1.$comp-ixfkgtrl.0"><span id="comp-ixfkgtrllabel" class="s37label" data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.1.1.$SITE_PAGES.$pjt3c.1.$comp-ixfkgtr2.1.$mediaixfklhs64/=1$mediaixfklhs64.1.$comp-ixfkgtr5.1.$mediaixfklhs610/=1$mediaixfklhs610.1.$comp-ixfkgtr7.1.$comp-ixfkgtrl.0.0">Explore</span></a>
                                         </div>
                                       </div>
                                     </div>
