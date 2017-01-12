@@ -379,28 +379,14 @@ function myFunction() {
 </head>
 
 <body class="" data-spy="scroll" data-target=".navbar" data-offset="50">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-<script type="text/javascript">
-$('a[href^="#"]').on('click', function(event) {
 
-    var target = $(this.getAttribute('href'));
-
-    if( target.length ) {
-        event.preventDefault();
-        $('html, body').stop().animate({
-            scrollTop: target.offset().top
-        }, 2000);
-    }
-
-});
-</script>
 <script src="http://d3js.org/d3.v3.min.js"></script>
 <style>
     .showme{ display: none;}
     .showhim:hover .showme{display : block;}
     .showhim:hover .ok{display : none;}
     </style>
-    <embed name="NBAmusic" src="NBA_mix.mp3" loop=3 hidden="true" autostart="true">
+    <embed name="NBAmusic" src="NBA_mix.mp3" type="audio/mpeg" volume="50" hidden="true" autostart="true">
   <div id="SITE_CONTAINER">
     <div class="noop" data-reactid=".0">
       <div data-reactid=".0.0">
@@ -2984,6 +2970,9 @@ function drawMultSeries() {
                                         <div id="comp-ixfkgtrl" data-align="center" data-disabled="false" data-margin="20" data-should-use-flex="true" style="left: 423px; position: absolute; top: 810px; height: 45px; min-height: 24px; width: 94px;"
                                           class="s37" data-state="desktop shouldUseFlex center" data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.1.1.$SITE_PAGES.$pjt3c.1.$comp-ixfkgtr2.1.$mediaixfklhs64/=1$mediaixfklhs64.1.$comp-ixfkgtr5.1.$mediaixfklhs610/=1$mediaixfklhs610.1.$comp-ixfkgtr7.1.$comp-ixfkgtrl"
                                           data-prev-text="Explore" data-prev-min-width="54" data-prev-width="94">
+                                            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+                                            <script type="text/javascript">$('a[href^="#"]').on('click', function(event) {var target = $(this.getAttribute('href'));if( target.length ) {event.preventDefault();$('html, body').stop().animate({scrollTop: target.offset().top}, 1000); }});
+                                            </script>
                                           <a href="#comp-ixfkgtrm" id="comp-ixfkgtrllink" class="g-transparent-a s37link" data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.1.1.$SITE_PAGES.$pjt3c.1.$comp-ixfkgtr2.1.$mediaixfklhs64/=1$mediaixfklhs64.1.$comp-ixfkgtr5.1.$mediaixfklhs610/=1$mediaixfklhs610.1.$comp-ixfkgtr7.1.$comp-ixfkgtrl.0"><span id="comp-ixfkgtrllabel" class="s37label" data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.1.1.$SITE_PAGES.$pjt3c.1.$comp-ixfkgtr2.1.$mediaixfklhs64/=1$mediaixfklhs64.1.$comp-ixfkgtr5.1.$mediaixfklhs610/=1$mediaixfklhs610.1.$comp-ixfkgtr7.1.$comp-ixfkgtrl.0.0">Explore</span></a>
                                         </div>
                                       </div>
